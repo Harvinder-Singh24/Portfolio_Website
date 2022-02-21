@@ -44,7 +44,10 @@ export default function App() {
       isNotSmallerScreen = {isNotSmallerScreen}
       ></Home>
 
-      <About></About>
+      <About
+      isDark = {isDark}
+      isNotSmallerScreen = {isNotSmallerScreen}
+      ></About>
     </>
   );
 }
