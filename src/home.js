@@ -12,7 +12,7 @@ import {
 
 export default function home(props) {
   return (
-    <Flex direction="column" m={30} alignItems="center">
+    <Flex direction="column" m={0} alignItems="center">
       <Heading fontSize={props.isNotSmallerScreen ? "120px" : "70px"} mt="100" textAlign="center">
         Software
       </Heading>

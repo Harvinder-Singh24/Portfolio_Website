@@ -8,18 +8,22 @@ import {
   IconButton,
   useColorMode,
   Heading,
+  Box,
   useMediaQuery,
 } from "@chakra-ui/react";
 import Home from "./home";
+import {useWindowScrollPositions} from "./scrolldirection"
 import About from "./About";
 
 export default function App() {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
   const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
+
   return (
     <>
-      <Flex m={30}>
+      <Flex p={30} direction="row" as="header" position="fixed" backgroundColor={isDark ? "transparent" : "white"} 
+  w="100%" h="10%" >
         <IconButton
         borderRadius= {10}
           border="1px"
@@ -29,6 +33,7 @@ export default function App() {
           fontSize="30px"
           icon={<CgMail />}
         />
+       
         <Spacer></Spacer>
         <IconButton
         borderRadius= {10}
