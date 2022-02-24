@@ -5,7 +5,7 @@ import {
     Spacer,
     IconButton,
     useColorMode,
-    Heading,
+    Heading, 
     useMediaQuery,
   } from "@chakra-ui/react";
 
@@ -30,6 +30,7 @@ export default function home(props) {
         mt={50}
         h={50}
         w={120}
+        boxShadow='dark-lg'
         borderRadius={30}
         border="1px"
         borderColor={props.isDark ? "white" : "black"}
