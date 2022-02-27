@@ -1,6 +1,7 @@
 import React from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
+import Skill from './skill';
 import {
   Flex,
   Button,
@@ -53,6 +54,7 @@ export default function App() {
       isDark = {isDark}
       isNotSmallerScreen = {isNotSmallerScreen}
       ></About>
+
     </>
   );
 }
