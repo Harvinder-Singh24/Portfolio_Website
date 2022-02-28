@@ -31,7 +31,7 @@ export default function App() {
   }, []);
 
   return (
-    <div>
+    <div height="100vh">
       {loading ? (
         <div style= {{
           display:"flex",
@@ -81,6 +81,7 @@ export default function App() {
             isDark={isDark}
             isNotSmallerScreen={isNotSmallerScreen}
           ></About>
+          <Skill></Skill>
         </>
       )}
     </div>

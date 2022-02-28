@@ -13,10 +13,10 @@ import Typewriter from "typewriter-effect";
 
 export default function home(props) {
   return (
-    <Flex direction="column" m={0} alignItems="center">
+    <Flex direction="column" m={0} alignItems="center" >
       <Heading
         fontSize={props.isNotSmallerScreen ? "120px" : "70px"}
-        mt="100"
+        mt={props.isNotSmallerScreen ? "150" : "200"}
         textAlign="center"
       >
         <Typewriter

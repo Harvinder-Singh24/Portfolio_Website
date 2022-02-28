@@ -4,9 +4,9 @@ import React from "react";
 export default function skill() {
   return (
     <>
-      <Flex direction="column" mt={30}>
+      <Flex direction="column" mt={50}>
         <Heading textAlign="center">Skills</Heading>
-        <SimpleGrid columns={2}  minChildwidth ='100px' spacing={20} p ={30} mt={10}>
+        <SimpleGrid columns={2}  minChildwidth ='10px' spacing={20} p ={30} mt={10}>
           <Box bg="#EDEEEE" height="280px" border="1px" boxShadow="dark-lg" borderRadius={30} alignItems="center">
             <Flex direction="column" alignItems="center">
             <Heading>Flutter</Heading>

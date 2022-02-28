@@ -7,16 +7,21 @@ import {
   Avatar,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
+import React ,  {useEffect} from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function About(props) {
+  useEffect(() =>{
+    Aos.init({duration: 2000});
+  },[])
   return (
     <>
       <Flex direction="column" mt={150}>
         <Heading textAlign="center">About</Heading>
         <Flex direction={props.isNotSmallerScreen ? "row" : "column"} m={10}>
           <Flex direction="column" alignItems="center">
-            <Wrap>
+            <Wrap data-aos="fade-up">
               <WrapItem>
                 <Avatar
                   width={props.isNotSmallerScreen ? "450px" : "350px"}
