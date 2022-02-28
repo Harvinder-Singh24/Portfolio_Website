@@ -81,7 +81,9 @@ export default function App() {
             isDark={isDark}
             isNotSmallerScreen={isNotSmallerScreen}
           ></About>
-          <Skill></Skill>
+          <Skill
+          isNotSmallerScreen={isNotSmallerScreen}
+          ></Skill>
         </>
       )}
     </div>
