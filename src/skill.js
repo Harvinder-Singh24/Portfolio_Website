@@ -1,4 +1,4 @@
-import { Flex, Heading, SimpleGrid, Box , Spacer } from "@chakra-ui/react";
+import { Flex, Heading, Grid , GridItem } from "@chakra-ui/react";
 import React from "react";
 
 export default function skill() {
@@ -6,18 +6,14 @@ export default function skill() {
     <>
       <Flex direction="column" mt={50}>
         <Heading textAlign="center">Skills</Heading>
-        <SimpleGrid columns={2}  minChildwidth ='10px' spacing={20} p ={30} mt={10}>
-          <Box bg="#EDEEEE" height="280px" border="1px" boxShadow="dark-lg" borderRadius={30} alignItems="center">
-            <Flex direction="column" alignItems="center">
-            <Heading>Flutter</Heading>
-            </Flex>
-          </Box>
-          <Box bg="#EDEEEE" height="280px" border="1px" boxShadow="dark-lg" borderRadius={30}></Box>
-          <Box bg="#EDEEEE" height="280px" border="1px" boxShadow="dark-lg" borderRadius={30}></Box>
-          <Box bg="#EDEEEE" height="280px" border="1px" boxShadow="dark-lg" borderRadius={30}></Box>
-          <Box bg="#EDEEEE" height="280px" border="1px" boxShadow="dark-lg" borderRadius={30}></Box>
-          <Box bg="#EDEEEE" height="280px" border="1px" boxShadow="dark-lg" borderRadius={30}></Box>
-        </SimpleGrid>
+        <Grid templateColumns="repeat(3, 1fr)" gap={6} m={10} h="500px">
+          <GridItem w="100%" borderRadius={10} bg="blue.500" />
+          <GridItem w="100%" borderRadius={10} bg="blue.500" />
+          <GridItem w="100%" borderRadius={10} bg="blue.500" />
+          <GridItem w="100%" borderRadius={10} bg="blue.500" />
+          <GridItem w="100%" borderRadius={10} bg="blue.500" />
+          <GridItem w="100%" borderRadius={10}bg="blue.500" />
+        </Grid>
       </Flex>
     </>
   );

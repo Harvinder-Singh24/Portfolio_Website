@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState} from "react";
 import {
   Flex,
   Button,
@@ -11,7 +11,9 @@ import {
 } from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
 
-export default function home(props) {
+export default function Home(props) {
+  let InitialbuttonColor = "white";
+  const [Color , setColor] = useState(InitialbuttonColor);
   return (
     <Flex direction="column" m={0} alignItems="center" >
       <Heading
@@ -63,8 +65,10 @@ export default function home(props) {
         boxShadow="dark-lg"
         borderRadius={30}
         border="1px"
+        onMouseOver={props.isDark ? () => setColor("white") : () => setColor("black")}
+        onMouseLeave={() => setColor(InitialbuttonColor)}
         borderColor={props.isDark ? "white" : "black"}
-        color={props.isDark ? "white" : "white"}
+        color={Color}
       >
         Hire Me
       </Button>
