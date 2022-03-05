@@ -32,10 +32,10 @@ export default function About(props) {
               </WrapItem>
             </Wrap>
             <Flex direction="row" alignItems="center" columnGap={30} mt={10}>
-              <a href="https://github.com/Hackersvilla">
+              <a href="https://github.com/Hackersvilla" target="_blank">
                 <img src="./images/github.png" alt="" width="40" height="40" />
               </a>
-              <a href="https://www.linkedin.com/in/coder-boy/">
+              <a href="https://www.linkedin.com/in/coder-boy/"target="_blank">
                 <img
                   src="./images/linkedin.png"
                   alt=""
@@ -43,7 +43,7 @@ export default function About(props) {
                   height="40"
                 />
               </a>
-              <a href="https://twitter.com/ExtractsNft">
+              <a href="https://twitter.com/ExtractsNft"target="_blank">
                 <img src="./images/twitter.png" alt="" width="40" height="40" />
               </a>
             </Flex>
