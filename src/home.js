@@ -18,7 +18,7 @@ export default function Home(props) {
     <Flex direction="column" m={0} alignItems="center" >
       <Heading
         fontSize={props.isNotSmallerScreen ? "120px" : "70px"}
-        mt={props.isNotSmallerScreen ? "150" : "200"}
+        mt={props.isNotSmallerScreen ? "50" : "100"}
         textAlign="center"
       >
         <Typewriter
