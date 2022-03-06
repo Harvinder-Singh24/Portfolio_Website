@@ -2,12 +2,7 @@ import React, { useState } from "react";
 import {
   Flex,
   Button,
-  Spacer,
-  IconButton,
-  useColorMode,
   Heading,
-  Container,
-  Box,
 } from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
 
@@ -19,8 +14,8 @@ export default function Home(props) {
       <Heading
         fontSize={props.isNotSmallerScreen ? "120px" : "70px"}
         mt={props.isNotSmallerScreen ? "50" : "100"}
-        textAlign="center"
-      >
+        textAlign="center">
+          
         <Typewriter
           onInit={(typewriter) => {
             typewriter
