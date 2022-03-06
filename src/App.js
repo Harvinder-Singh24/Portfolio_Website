@@ -68,7 +68,7 @@ export default function App() {
                   duration: 5000,
                   isClosable: true,
                 })}
-                icon={<CgMail />}
+                icon={ <CgMail /> }
               />
                   
             </CopyToClipboard>
@@ -84,12 +84,12 @@ export default function App() {
             />
           </Flex>
 
-          <Home isDark={isDark} isNotSmallerScreen={isNotSmallerScreen}></Home>
+          <Home isDark={isDark} isNotSmallerScreen={isNotSmallerScreen} />
 
           <About
             isDark={isDark}
-            isNotSmallerScreen={isNotSmallerScreen}/>
-          <Skill isNotSmallerScreen={isNotSmallerScreen}/>
+            isNotSmallerScreen={isNotSmallerScreen} />
+          <Skill isNotSmallerScreen={isNotSmallerScreen} />
         </>
       )}
     </div>
