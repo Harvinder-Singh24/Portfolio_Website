@@ -9,6 +9,7 @@ In the project directory, you can run:
 ### `yarn` 
 
 Downloads all the modules required for react.
+
 ### `npm start`
 
 Runs the app in the development mode.\
