@@ -5,12 +5,9 @@ import Skill from "./skill";
 import { useToast } from '@chakra-ui/react'
 import {
   Flex,
-  Button,
   Spacer,
   IconButton,
   useColorMode,
-  Heading,
-  Box,
   useMediaQuery,
 } from "@chakra-ui/react";
 import Home from "./home";
@@ -73,9 +70,11 @@ export default function App() {
                 })}
                 icon={<CgMail />}
               />
+                  
             </CopyToClipboard>
 
-            <Spacer></Spacer>
+            <Spacer/>
+                  
             <IconButton
               borderRadius={10}
               border="1px"
@@ -84,12 +83,13 @@ export default function App() {
               icon={isDark ? <FaSun /> : <FaMoon />}
             />
           </Flex>
+
           <Home isDark={isDark} isNotSmallerScreen={isNotSmallerScreen}></Home>
+
           <About
             isDark={isDark}
-            isNotSmallerScreen={isNotSmallerScreen}
-          ></About>
-          <Skill isNotSmallerScreen={isNotSmallerScreen}></Skill>
+            isNotSmallerScreen={isNotSmallerScreen}/>
+          <Skill isNotSmallerScreen={isNotSmallerScreen}/>
         </>
       )}
     </div>
