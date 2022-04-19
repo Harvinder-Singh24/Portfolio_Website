@@ -5,11 +5,15 @@ import {
   WrapItem,
   Wrap,
   Avatar,
+  Box,
   Text,
+  IconButton,
 } from "@chakra-ui/react";
 import React ,  {useEffect} from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import {RiAccountCircleFill} from "react-icons/ri"
+
 
 export default function About(props) {
   useEffect(() =>{
@@ -18,10 +22,16 @@ export default function About(props) {
   return (
     <>
       <Flex direction="column" mt={150}>
-        <Heading textAlign="center">About</Heading>
+        <Flex direction="row" justifyContent="center">
+          <img src="./icons/white_mode.png" alt="" width="40" height="40" />
+          <Box width="3"></Box>
+          <Heading textAlign="center">About</Heading>
+          <Box width="3"></Box>
+          <Heading textAlign="center" color="4299E1">Me</Heading>
+        </Flex>
         <Flex direction={props.isNotSmallerScreen ? "row" : "column"} m={10}>
           <Flex direction="column" alignItems="center">
-            
+
             <Wrap data-aos="fade-up">
               <WrapItem>
                 <Avatar
@@ -33,7 +43,7 @@ export default function About(props) {
             </Wrap>
 
             <Flex direction="row" alignItems="center" columnGap={30} mt={10}>
-              
+
               <a href="https://github.com/Hackersvilla" target="_blank">
                 <img src="./images/github.png" alt="" width="40" height="40" />
               </a>
