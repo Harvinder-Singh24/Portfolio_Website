@@ -29,7 +29,7 @@ export default function About(props) {
           <Box width="3"></Box>
           <Heading textAlign="center" color="#4299E1">Me</Heading>
         </Flex>
-        <Flex direction={props.isNotSmallerScreen ? "row" : "column"} m={10}>
+        <Flex direction={props.isNotSmallerScreen ? "row" : "column"} m={10} ml={props.isNotSmallerScreen ?100:30}>
           <Flex direction="column" alignItems="center">
 
             <Wrap data-aos="fade-up">
@@ -62,17 +62,20 @@ export default function About(props) {
 
             </Flex>
           </Flex>
-
-          <Container centerContent mt={100}>
-            <Text as="samp" textAlign="left">
-              Hello! I am an 18-year-old software developer and a designer from
-              India. As a self-learner, I have learnt all the things and managed
-              all the things on my own. I just love to make websites and apps in
-              the most simple and efficient way. I mainly work with flutter and
-              react to build my stuff.
-            </Text>
-          </Container>
-
+          <Box width={100} ></Box>
+          <Wrap data-aos="zoom-in-up">
+            <WrapItem>
+              <Container centerContent mt={100}>
+                <Text as="samp" textAlign="left">
+                  Hello! I am an 18-year-old software developer and a designer from
+                  India. As a self-learner, I have learnt all the things and managed
+                  all the things on my own. I just love to make websites and apps in
+                  the most simple and efficient way. I mainly work with flutter and
+                  react to build my stuff.
+                </Text>
+              </Container>
+            </WrapItem>
+          </Wrap>
         </Flex>
       </Flex>
     </>
