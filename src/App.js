@@ -70,11 +70,11 @@ export default function App() {
                 })}
                 icon={ <CgMail /> }
               />
-                  
+
             </CopyToClipboard>
 
             <Spacer/>
-                  
+
             <IconButton
               borderRadius={10}
               border="1px"
@@ -89,7 +89,8 @@ export default function App() {
           <About
             isDark={isDark}
             isNotSmallerScreen={isNotSmallerScreen} />
-          <Skill isNotSmallerScreen={isNotSmallerScreen} />
+
+          <Skill isNotSmallerScreen={isNotSmallerScreen} isDark={isDark}/>
         </>
       )}
     </div>

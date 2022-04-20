@@ -23,11 +23,11 @@ export default function About(props) {
     <>
       <Flex direction="column" mt={150}>
         <Flex direction="row" justifyContent="center">
-          <img src="./icons/white_mode.png" alt="" width="40" height="40" />
+          <img src={props.isDark ? "./icons/dark_mode_about.png" : "./icons/white_mode_about.png"}alt="" width="40" height="40" />
           <Box width="3"></Box>
           <Heading textAlign="center">About</Heading>
           <Box width="3"></Box>
-          <Heading textAlign="center" color="4299E1">Me</Heading>
+          <Heading textAlign="center" color="#4299E1">Me</Heading>
         </Flex>
         <Flex direction={props.isNotSmallerScreen ? "row" : "column"} m={10}>
           <Flex direction="column" alignItems="center">
