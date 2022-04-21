@@ -15,7 +15,7 @@ export default function Home(props) {
         fontSize={props.isNotSmallerScreen ? "120px" : "70px"}
         mt={props.isNotSmallerScreen ? "50" : "100"}
         textAlign="center">
-          
+
         <Typewriter
           onInit={(typewriter) => {
             typewriter
@@ -59,9 +59,7 @@ export default function Home(props) {
           mt={50}
           h={50}
           w={120}
-          boxShadow="dark-lg"
-          borderRadius={30}
-          border="1px"
+          borderRadius={10}
           onMouseOver={
             props.isDark ? () => setColor("white") : () => setColor("black")
           }
