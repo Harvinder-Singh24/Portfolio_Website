@@ -1,4 +1,4 @@
-import { Flex, Heading, Box, SimpleGrid, WrapItem ,Wrap } from "@chakra-ui/react";
+import { Flex, Heading, Box, SimpleGrid, WrapItem ,Wrap , useMediaQuery} from "@chakra-ui/react";
 import React , {useEffect} from "react";
 import Records from "./skills.json";
 import Aos from "aos";
@@ -8,6 +8,7 @@ export default function Skill(props) {
   useEffect(() =>{
     Aos.init({duration: 2000});
   },[])
+  const [IsMobile] = useMediaQuery("(min-width:1000px)");
   return (
     <>
       <Flex direction="column" mt={50} mb={50} alignItems="center">
@@ -31,20 +32,21 @@ export default function Skill(props) {
         </Flex>
         <Wrap data-aos="fade-up">
           <WrapItem>
-            <Box width={1300} height={900} bg="#1A202C" mt={100} p={14} borderRadius={20}>
+            <Box width={props.isNotSmallerScreen ?1300 : IsMobile ? 20 : 600}  height={900} bg={props.isDark ? "#4299E1" :"#1A202C"} mt={100} ml={30} mr={30} p={14} borderRadius={20}>
               <SimpleGrid minChildWidth="180px" spacing="60px">
                 {Records &&
                   Records.map((record) => {
                     return (
                       <Box
-                        bg="#4299E1"
+                        bg={props.isDark ? "#e0eefa" : "#dcdfe2"}
                         width="180px"
                         height="150px"
                         p={5}
+                        cursor="pointer"
                         borderRadius={20}
                       >
                         <Flex direction="column" alignItems="center">
-                          <Heading size={25} textAlign="center">
+                          <Heading size={25} textAlign="center" color="black">
                             {record.name}
                           </Heading>
                           <img src={record.icon} width={80} height={80} />

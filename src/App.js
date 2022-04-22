@@ -21,7 +21,7 @@ export default function App() {
   const [loading, setloading] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:1000px)");
 
   useEffect(() => {
     setloading(true);
