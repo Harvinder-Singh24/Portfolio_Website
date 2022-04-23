@@ -30,10 +30,10 @@ export default function Skill(props) {
             Abilities
           </Heading>
         </Flex>
+        <Box height="50"></Box>
         <Wrap data-aos="fade-up">
           <WrapItem>
-            <Box width={props.isNotSmallerScreen ?1300 : IsMobile ? 20 : 600}  height={900} bg={props.isDark ? "#4299E1" :"#1A202C"} mt={100} ml={30} mr={30} p={14} borderRadius={20}>
-              <SimpleGrid minChildWidth="180px" spacing="60px">
+              <SimpleGrid  columns={props.isNotSmallerScreen ? 4 : 2} spacing="60px">
                 {Records &&
                   Records.map((record) => {
                     return (
@@ -55,7 +55,7 @@ export default function Skill(props) {
                     );
                   })}
               </SimpleGrid>
-            </Box>
+
           </WrapItem>
         </Wrap>
       </Flex>

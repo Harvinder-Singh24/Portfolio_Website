@@ -3,6 +3,7 @@ import { FaSun, FaMoon } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import Skill from "./skill";
 import { useToast } from '@chakra-ui/react'
+import Education from "./education";
 import {
   Flex,
   Spacer,
@@ -91,6 +92,7 @@ export default function App() {
             isNotSmallerScreen={isNotSmallerScreen} />
 
           <Skill isNotSmallerScreen={isNotSmallerScreen} isDark={isDark}/>
+          <Education isNotSmallerScreen={isNotSmallerScreen} isDark={isDark}/>
         </>
       )}
     </div>
