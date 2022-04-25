@@ -38,7 +38,7 @@ export default function education(props) {
         <Box height="10"></Box>
 
         <Box p={10} display={{ md: "flex" }}>
-          <Box flexShrink={0}>
+          <Box >
             <Image
               borderRadius="lg"
               width={{ md: 40 }}
@@ -74,15 +74,13 @@ export default function education(props) {
         </Box>
 
 
-        <Box height="10"></Box>
-
-        <Box p={10} display={{ md: "flex" }}>
-          <Box flexShrink={0}>
+        <Box p={10} display={{ md: "flex" }} mr={props.isNotSmallerScreen ? 100:0}>
+          <Box >
             <Image
               borderRadius="lg"
               width={{ md: 40 }}
               src="./images/school.jpg"
-              alt="school"
+              alt="College"
             />
           </Box>
           <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
@@ -93,18 +91,18 @@ export default function education(props) {
               letterSpacing="wide"
               color="teal.600"
             >
-             Class 12 - 85% & Class 10 - 80%
+              Class 12 - 85% && Class 10 - 80%
             </Text>
             <Link
               mt={1}
               display="block"
               fontSize="sm"
-              lineHeight="normal"
               target="_blank"
+              lineHeight="normal"
               fontWeight="semibold"
-              href="https://stpeterskicha.org/#1"
+              href="https://www.gehu.ac.in/"
             >
-                St. Peter Senior Secondary School,Kishanpur
+                St.Peter Senior Secondary School , Kishanpur
             </Link>
             <Text mt={2} color="gray.500">
               2006 - 2021

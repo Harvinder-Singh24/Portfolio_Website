@@ -55,7 +55,6 @@ export default function Skill(props) {
                     );
                   })}
               </SimpleGrid>
-
           </WrapItem>
         </Wrap>
       </Flex>
