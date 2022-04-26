@@ -53,7 +53,7 @@ export default function Home(props) {
       </Heading>
 
       <a target="_blank"
-      href="https://f159d653-5dd4-4765-9bde-191259ee53be.usrfiles.com/ugd/f159d6_f15ce59a4a3846baaacf53f25cc3722e.pdf">
+      href="https://www.dropbox.com/s/81vu490hh7rbv3f/My%20Resume%20%281%29.pdf?dl=0">
         <Button
           bg="blue.400"
           mt={50}
