@@ -1,14 +1,19 @@
 import { Flex, Heading, Box, SimpleGrid, WrapItem ,Wrap , useMediaQuery} from "@chakra-ui/react";
-import React , {useEffect} from "react";
+import React , {useEffect , useState}  from "react";
 import Records from "./skills.json";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 export default function Skill(props) {
+  let white_mode_color_box = "#dcdfe2";
+  let dark_mode_color_box = "#e0eefa";
   useEffect(() =>{
     Aos.init({duration: 2000});
   },[])
   const [IsMobile] = useMediaQuery("(min-width:1000px)");
+  const [WhiteMode , SetWhiteModeColor] = useState(white_mode_color_box);
+  const [DarkMode , SetDarkModeColor] = useState(dark_mode_color_box);
+
   return (
     <>
       <Flex direction="column" mt={50} mb={50} alignItems="center">
@@ -38,7 +43,7 @@ export default function Skill(props) {
                   Records.map((record) => {
                     return (
                       <Box
-                        bg={props.isDark ? "#e0eefa" : "#dcdfe2"}
+                        bg={props.isDark ? dark_mode_color_box : white_mode_color_box}
                         width="180px"
                         height="150px"
                         p={5}

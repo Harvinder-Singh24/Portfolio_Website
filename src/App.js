@@ -9,12 +9,13 @@ import {
   Spacer,
   IconButton,
   useColorMode,
-  useMediaQuery,
+useMediaQuery,
 } from "@chakra-ui/react";
 import Home from "./home";
 import { useWindowScrollPositions } from "./scrolldirection";
 import About from "./About";
 import ClockLoader from "react-spinners/ClockLoader";
+import Projects from "./Projects";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 export default function App() {
 
@@ -57,9 +58,8 @@ export default function App() {
             <CopyToClipboard text="Hackersvilla776@gmail.com">
               <IconButton
                 borderRadius={10}
-                border="1px"
-                borderColor={isDark ? "white" : "black"}
-                variant="solid"
+
+              variant="solid"
                 aria-label="Email_Button"
                 fontSize="30px"
                 onClick={() => toast({
@@ -78,8 +78,6 @@ export default function App() {
 
             <IconButton
               borderRadius={10}
-              border="1px"
-              borderColor={isDark ? "white" : "black"}
               onClick={toggleColorMode}
               icon={isDark ? <FaSun /> : <FaMoon />}
             />
@@ -89,10 +87,11 @@ export default function App() {
 
           <About
             isDark={isDark}
-            isNotSmallerScreen={isNotSmallerScreen} />
+            isNotSmallerScreen={isNotSmallerScreen} />n
 
           <Skill isNotSmallerScreen={isNotSmallerScreen} isDark={isDark}/>
           <Education isNotSmallerScreen={isNotSmallerScreen} isDark={isDark}/>
+         {/*<Projects isNotSmallerScreen={isNotSmallerScreen} isDark={isDark}/>*/}
         </>
       )}
     </div>

@@ -37,78 +37,89 @@ export default function education(props) {
 
         <Box height="10"></Box>
 
-        <Box p={10} display={{ md: "flex" }}>
-          <Box >
-            <Image
-              borderRadius="lg"
-              width={{ md: 40 }}
-              src="./images/college.jpg"
-              alt="College"
-            />
-          </Box>
-          <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
-            <Text
-              fontWeight="bold"
-              textTransform="uppercase"
-              fontSize="lg"
-              letterSpacing="wide"
-              color="teal.600"
-            >
-              Bachelor Of Computer Application (BCA)
-            </Text>
-            <Link
-              mt={1}
-              display="block"
-              fontSize="sm"
-              target="_blank"
-              lineHeight="normal"
-              fontWeight="semibold"
-              href="https://www.gehu.ac.in/"
-            >
-                Graphic Era Hill University , Haldwani
-            </Link>
-            <Text mt={2} color="gray.500">
-              2021 - 2024
-            </Text>
-          </Box>
-        </Box>
+        <Wrap data-aos="fade-up">
+          <WrapItem>
+            <Box p={10} display={{ md: "flex" }}>
+              <Box>
+                <Image
+                  borderRadius="lg"
+                  width={{ md: 40 }}
+                  src="./images/college.jpg"
+                  alt="College"
+                />
+              </Box>
+              <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
+                <Text
+                  fontWeight="bold"
+                  textTransform="uppercase"
+                  fontSize="lg"
+                  letterSpacing="wide"
+                  color="teal.600"
+                >
+                  Bachelor Of Computer Application (BCA)
+                </Text>
+                <Link
+                  mt={1}
+                  display="block"
+                  fontSize="sm"
+                  target="_blank"
+                  lineHeight="normal"
+                  fontWeight="semibold"
+                  href="https://www.gehu.ac.in/"
+                >
+                  Graphic Era Hill University , Haldwani
+                </Link>
+                <Text mt={2} color="gray.500">
+                  2021 - 2024
+                </Text>
+              </Box>
+            </Box>
+          </WrapItem>
+        </Wrap>
 
-
-        <Box p={10} display={{ md: "flex" }} mr={props.isNotSmallerScreen ? 100:0}>
-          <Box >
-            <Image
-              borderRadius="lg"
-              width={{ md: 40 }}
-              src="./images/school.jpg"
-              alt="College"
-            />
-          </Box>
-          <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
-            <Text
-              fontWeight="bold"
-              textTransform="uppercase"
-              fontSize="lg"
-              letterSpacing="wide"
-              color="teal.600"
+        <Wrap data-aos="fade-up">
+          <WrapItem>
+            <Box
+              p={10}
+              display={{ md: "flex" }}
+              mr={props.isNotSmallerScreen ? 100 : 0}
             >
-              Class 12 - 85% && Class 10 - 80%
-            </Text>
-            <Link
-              mt={1}
-              display="block"
-              fontSize="sm"
-              target="_blank"
-              lineHeight="normal"
-              fontWeight="semibold"
-              href="https://www.gehu.ac.in/"
-            >
-                St.Peter Senior Secondary School , Kishanpur
-            </Link>
-            <Text mt={2} color="gray.500">
-              2006 - 2021
-            </Text>
-          </Box>
-        </Box>
+              <Box>
+                <Image
+                  borderRadius="lg"
+                  width={{ md: 40 }}
+                  src="./images/school.jpg"
+                  alt="College"
+                />
+              </Box>
+              <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
+                <Text
+                  fontWeight="bold"
+                  textTransform="uppercase"
+                  fontSize="lg"
+                  letterSpacing="wide"
+                  color="teal.600"
+                >
+                  Class 12 && Class 10
+                </Text>
+                <Link
+                  mt={1}
+                  display="block"
+                  fontSize="sm"
+                  target="_blank"
+                  lineHeight="normal"
+                  fontWeight="semibold"
+                  href="https://www.gehu.ac.in/"
+                >
+                  St.Peter Senior Secondary School , Kishanpur
+                </Link>
+                <Text mt={2} color="gray.500">
+                  2006 - 2021
+                </Text>
+              </Box>
+            </Box>
+          </WrapItem>
+        </Wrap>
       </Flex>
     </>
   );
