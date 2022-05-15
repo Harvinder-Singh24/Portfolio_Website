@@ -17,6 +17,8 @@ import About from "./About";
 import ClockLoader from "react-spinners/ClockLoader";
 import Projects from "./Projects";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import Contact from './contact'
+
 export default function App() {
 
   const toast = useToast()
@@ -91,6 +93,7 @@ export default function App() {
 
           <Skill isNotSmallerScreen={isNotSmallerScreen} isDark={isDark}/>
           <Education isNotSmallerScreen={isNotSmallerScreen} isDark={isDark}/>
+
          {/*<Projects isNotSmallerScreen={isNotSmallerScreen} isDark={isDark}/>*/}
         </>
       )}
