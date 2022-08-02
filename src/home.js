@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-import {
-  Flex,
-  Button,
-  Heading,
-} from "@chakra-ui/react";
+import { Flex, Button, Heading } from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
+import { motion } from "framer-motion";
 
 export default function Home(props) {
   let InitialbuttonColor = "white";
@@ -14,8 +11,8 @@ export default function Home(props) {
       <Heading
         fontSize={props.isNotSmallerScreen ? "120px" : "70px"}
         mt={props.isNotSmallerScreen ? "50" : "100"}
-        textAlign="center">
-
+        textAlign="center"
+      >
         <Typewriter
           onInit={(typewriter) => {
             typewriter
@@ -52,24 +49,35 @@ export default function Home(props) {
         />
       </Heading>
 
-      <a target="_blank"
-      href="https://www.dropbox.com/s/81vu490hh7rbv3f/My%20Resume%20%281%29.pdf?dl=0">
-        <Button
-          bg="blue.400"
-          mt={50}
-          h={50}
-          w={120}
-          borderRadius={10}
-          onMouseOver={
-            props.isDark ? () => setColor("white") : () => setColor("black")
-          }
-          onMouseLeave={() => setColor(InitialbuttonColor)}
-          borderColor={props.isDark ? "white" : "black"}
-          color={Color}
+      <motion.div
+        whileHover={{ scale: 1.2, rotate: 0 }}
+        whileTap={{
+          scale: 0.8,
+          rotate: 0,
+          borderRadius: "100%",
+        }}
+      >
+        <a
+          target="_blank"
+          href="https://www.dropbox.com/s/81vu490hh7rbv3f/My%20Resume%20%281%29.pdf?dl=0"
         >
-          Hire Me
-        </Button>{" "}
-      </a>
+          <Button
+            bg="blue.400"
+            mt={50}
+            h={50}
+            w={120}
+            borderRadius={10}
+            onMouseOver={
+              props.isDark ? () => setColor("white") : () => setColor("black")
+            }
+            onMouseLeave={() => setColor(InitialbuttonColor)}
+            borderColor={props.isDark ? "white" : "black"}
+            color={Color}
+          >
+            Hire Me
+          </Button>{" "}
+        </a>
+      </motion.div>
     </Flex>
   );
 }

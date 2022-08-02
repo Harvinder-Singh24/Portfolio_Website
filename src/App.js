@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import Skill from "./skill";
-import { useToast } from '@chakra-ui/react'
-import Education from "./education";
+import { Heading, useToast } from '@chakra-ui/react'
 import {
   Flex,
   Spacer,
@@ -18,6 +17,7 @@ import ClockLoader from "react-spinners/ClockLoader";
 import Projects from "./Projects";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Contact from './contact'
+
 
 export default function App() {
 
@@ -50,8 +50,11 @@ export default function App() {
         </div>
       ) : (
         <>
+
           <Flex
             p={30}
+            as="header"
+            position="fixed"
             direction="row"
             backgroundColor={isDark ? "transparent" : "white"}
             w="100%"
@@ -78,6 +81,7 @@ export default function App() {
 
             <Spacer/>
 
+
             <IconButton
               borderRadius={10}
               onClick={toggleColorMode}
@@ -89,10 +93,9 @@ export default function App() {
 
           <About
             isDark={isDark}
-            isNotSmallerScreen={isNotSmallerScreen} />n
+            isNotSmallerScreen={isNotSmallerScreen} />
 
           <Skill isNotSmallerScreen={isNotSmallerScreen} isDark={isDark}/>
-          <Education isNotSmallerScreen={isNotSmallerScreen} isDark={isDark}/>
 
          {/*<Projects isNotSmallerScreen={isNotSmallerScreen} isDark={isDark}/>*/}
         </>
