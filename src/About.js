@@ -94,11 +94,11 @@ export default function About(props) {
                 ml={props.isNotSmallerScreen ? 0 : 59}
               >
                 <Text as="samp" textAlign="left" fontSize={20}>
-                  Hello! I am an 18-year-old software developer and a designer
+                  👋🏼 Hello! I am an 18-year-old software developer and a designer
                   from India. As a self-learner, I have learnt all the things
                   and managed all the things on my own. I just love to make
                   websites and apps in the most simple and efficient way. I
-                  mainly work with flutter and react to build my stuff.
+                  mainly work with flutter and react to build my stuff.🧑🏼‍💻
                 </Text>
               </Container>
             </WrapItem>
